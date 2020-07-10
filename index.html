@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillShare - The Vue JS Crash Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="color">
+        <h1>first project</h1>
+        <input type="range" min="0" max="1" step="0.01" v-model="brightness">
+        brightness: {{dimComp+"%"}}
+        <div class="lamp" v-on:click="toggle">
+            <div class="shade">
+                <div class="light" v-if="on" v-bind:style="style">
+
+                </div>
+
+            </div>
+            <div class="base">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+
+</html>
